@@ -116,6 +116,7 @@ export default function Home() {
       <Card />
       <Popular />
       <Discount />
+      const imageSrc = "/Banner-2.png";
 
       {/* Image with alt text */}
         <Image
