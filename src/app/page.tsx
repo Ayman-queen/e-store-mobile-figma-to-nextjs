@@ -1,6 +1,5 @@
 
 import React from "react";
-import Image from "next/image";
 
 // Importing components
 import Nav from "./components/nav";
@@ -116,15 +115,13 @@ export default function Home() {
       <Card />
       <Popular />
       <Discount />
-      const imageSrc = "/Banner-2.png";
 
-      {/* Image with alt text */}
-        <Image
-        src={imageSrc} // Using path
-        alt="Description of image"
-        width={1800}
-        height={800}
+      {/* Image from public folder using <img> tag */}
+      <img
+        src={imageSrc} // Using path to the image in the public folder
+        alt="A banner image displaying products" // More descriptive alt text
         className="w-full h-auto max-md:w-[90%] max-md:h-[auto]" // Ensures responsiveness
+        loading="lazy" // Optional: Lazy load the image for better performance
       />
 
       {/* Footer */}
